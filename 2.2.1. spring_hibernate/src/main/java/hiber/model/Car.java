@@ -21,9 +21,10 @@ public class Car implements Serializable {
     public Car() {
     }
 
-    public Car(String m, int s) {
+    public Car(String m, int s, User user) {
         this.model = m;
         this.series = s;
+        this.user = user;
     }
 
     public User getUser() {

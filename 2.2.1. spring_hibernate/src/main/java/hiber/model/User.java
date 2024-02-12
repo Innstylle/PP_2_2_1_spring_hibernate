@@ -33,11 +33,12 @@ public class User {
     public User() {
     }
 
-    public User(String firstName, String lastName, String email, Car c) {
+    public User(String firstName, String lastName, String email, Car car) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        setCar(c);
+        this.car = car;
+        car.setUser(this);
     }
 
     public Long getId() {
